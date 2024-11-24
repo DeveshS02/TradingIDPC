@@ -44,6 +44,12 @@ function Header({ setCurrentView }) {
             >
               Trade History
             </button>
+            <button
+              onClick={() => handleNavigation('liveStocks')}
+              className="hover:bg-gray-700 px-3 py-2 rounded focus:outline-none"
+            >
+              Live Stocks
+            </button>
           </>
         )}
       </div>

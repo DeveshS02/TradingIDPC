@@ -69,3 +69,15 @@ export const getBalance = async () => {
     throw error.response?.data || { detail: 'Error fetching balance' };
   }
 };
+
+// **New Function: Fetch Live Stocks**
+export const getLiveStocks = async () => {
+  try {
+    const response = await axios.get(`http://localhost:8000/prices`, getAuthHeaders()); // Adjust URL if different
+    console.log(response);
+    
+    return response.data; // Assuming the data is in the expected format
+  } catch (error) {
+    throw error.response?.data || { detail: 'Error fetching live stock data' };
+  }
+};

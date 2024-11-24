@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import PlaceOrder from './components/PlaceOrder';
 import TradeHistory from './components/TradeHistory';
+import LiveStocks from './components/LiveStocks'; // Import LiveStocks
 import Login from './components/Login';
 import Register from './components/Register';
 import { AuthContext } from './AuthContext';
@@ -48,6 +49,8 @@ function App() {
         return <PlaceOrder setCurrentView={setCurrentView} refreshPortfolio={fetchPortfolio} />;
       case 'tradeHistory':
         return <TradeHistory />;
+      case 'liveStocks':
+        return <LiveStocks />;
       case 'login':
         return <Login setCurrentView={setCurrentView} />;
       case 'register':
