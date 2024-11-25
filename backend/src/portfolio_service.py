@@ -8,9 +8,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Add the parent directory to sys.path for proper imports
 sys.path.append("..")
-
+from database.dependencies import get_db
 from database.models import User, Holding, Trade
-from database.database import SessionLocal, engine
+from database.database import engine
 from database.schemas import PortfolioResponse, TradeHistoryResponse
 from auth import get_current_user, get_db
 

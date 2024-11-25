@@ -27,6 +27,7 @@ export const login = async (username, password) => {
     data.append('username', username);
     data.append('password', password);
     const response = await axios.post(`http://localhost:8001/token`, data);
+    console.log(response.data);
     setAuthToken(response.data.access_token); // Set token after login
     return response.data;
   } catch (error) {

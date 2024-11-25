@@ -36,7 +36,7 @@ function Portfolio() {
           <tr>
             <th className="border px-4 py-2">Stock Symbol</th>
             <th className="border px-4 py-2">Quantity</th>
-            <th className="border px-4 py-2">Average Cost</th>
+            <th className="border px-4 py-2"> Purchase Price</th>
             <th className="border px-4 py-2">Current Price</th>
             <th className="border px-4 py-2">Market Value</th>
             <th className="border px-4 py-2">Profit/Loss</th>
